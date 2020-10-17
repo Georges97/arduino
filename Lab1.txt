@@ -1,0 +1,52 @@
+/*
+ * IT462 George saab Lab 1
+ */
+ int LED = 13; // Pin 13 is named LED 
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(LED, OUTPUT); //Initialize Pin as Output
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ /*this is the start of the S O S. Starts with S first going got 250 milliseconds for 3 blinks from what I understand than the O for a second delay than back to the S */
+  digitalWrite(LED, HIGH); //turn on LED Starting the S
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(250); // wait for 250 milliseconds
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(250); // wait for one second
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED Ending the S
+  delay(250); // wait for 250 milliseconds. 
+  digitalWrite(LED, HIGH); //turn on LED Starting the O
+  delay(1000); //wait for one second
+  digitalWrite(LED, LOW); //turn off LED
+  delay(1000); // wait for one second
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(1000); //wait for one second
+  digitalWrite(LED, LOW); //turn off LED
+  delay(1000); // wait for one second
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(1000); //wait for one second
+  digitalWrite(LED, LOW); //turn off LED Ending the O
+  delay(1000); // wait for one second
+  digitalWrite(LED, HIGH); //turn on LED. Starting the S
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(250); // wait for one second
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(250); // wait for 250 milliseconds
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(1000); // wait for one second to dely the S O S repeating over and over again.
+
+}

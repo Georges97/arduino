@@ -1,0 +1,80 @@
+/*
+ * IT462 George saab Extra Credit Lab 2
+ * George in morse code.
+ */
+ int LED = 13; // Pin 13 is named LED 
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(LED, OUTPUT); //Initialize Pin as Output
+  Serial.begin(9600); //Begins Serial coms at 9600 baud rate
+  
+
+}
+
+void MorseDot() {
+  Serial.print("Dot"); //output to screen
+  Serial.print("\n"); //new line character
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(250); //wait for 250 milliseconds
+  digitalWrite(LED, LOW); //turn off LED
+  delay(250); // waitfor 250 milliseconds
+}
+
+
+void MorseDash() {
+  Serial.print("Dash"); //output to screen
+  Serial.print("\n"); //new line character
+  digitalWrite(LED, HIGH); //turn on LED
+  delay(1000); //wait for one second
+  digitalWrite(LED, LOW); //turn off LED
+  delay(1000); // wait for one second
+}
+
+void MorseG() {
+  //morse G
+  Serial.print("Morse G"); //output to screen
+  Serial.print("\n"); //new line character
+  MorseDash();
+  MorseDash();
+  MorseDot();
+}
+
+void MorseE() {
+  //morse E
+  Serial.print("Morse E"); //output to screen
+  Serial.print("\n"); //new line character
+  MorseDot();
+}
+
+void MorseO() {
+  //morse O
+  Serial.print("Morse O"); //output to screen
+  Serial.print("\n"); //new line character
+  MorseDash();
+  MorseDash();
+  MorseDash();
+}
+
+
+void MorseR() {
+  //morse R
+  Serial.print("Morse R"); //output to screen
+  Serial.print("\n"); //new line character
+  MorseDot();
+  MorseDash();
+  MorseDot();
+}
+
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ /*this is my name George*/
+ MorseG(); //Calls G output
+ MorseE(); //Calls E output
+ MorseO(); //Calls O output
+ MorseR(); //Calls R output
+ MorseG(); //Calls G output
+ MorseE(); //Calls E output
+   
+
+}
