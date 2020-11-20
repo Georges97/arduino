@@ -5,7 +5,7 @@
  float sensValue = 0; //variable to hold sensor reading
  const int button = 3; //pin for button reads
  const int LED1 = 2;
- const int LED4 = 5;
+ const int LED4 = 10;
  const int LED3 = 7;
  const int LED2 = 8;
  int buttonval = 0; //variable to hold button read
@@ -13,7 +13,7 @@
  int ledState = LOW;
  unsigned long previousMillis = 0; //will store last time LED was updated
  const long interval = 30000; //interval at which it will blink
- int var = 0;
+ int var = 0; //Starts the count at 0
 
  
 
@@ -40,7 +40,7 @@ void setup() {
 
 void blinks(){
   var = 0;
-  while (var < 5){
+  while (var < 5){ //will loop thorugh this function until it loops through 5 times
     var++;
     digitalWrite(LED1, HIGH);
     digitalWrite(LED2, HIGH);
