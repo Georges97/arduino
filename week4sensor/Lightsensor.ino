@@ -1,5 +1,6 @@
 /*
  * IT462 George saab Lab 4
+ * if it is to bright  a led turns on and one turns off. If it is dim one turns off one turns on
  */
  const int lightSensor = 5; //light sensor variable
  float sensValue = 0; //variable to hold sensor reading
