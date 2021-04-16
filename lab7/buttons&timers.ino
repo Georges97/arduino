@@ -1,3 +1,4 @@
+//button lab plus lights that are on timers
 const int Relay1=7; //relay variable
 
 int timer=0; // counter varible
