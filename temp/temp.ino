@@ -1,6 +1,7 @@
 /*
  * IT462 George saab Lab temp sensor
  */
+//turns on a fan
 int  tempSensor = 5; //pin decl for temp sensor
 float sensorValue = 0; //temp sensor reading
 float val = 0; //partial calculation
