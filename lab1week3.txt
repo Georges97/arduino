@@ -1,5 +1,5 @@
 /*
- * IT462 George saab Lab 1
+ * IT462 George saab Lab 3 knightrider
  */
  int LEDP13 = 13; // Pin 13 is named LED
  int x=0; //set inital counter at start up
